@@ -1,0 +1,21 @@
+<html>
+    <body>
+    <script>
+        function generateDivs(a) {
+            //console.log(a);
+            //console.log(arguments.length);
+            const elements = Object.values(arguments);
+             const bodyTag = document.querySelector('body');
+             elements.forEach(element => {
+                 const divTag = document.createElement('div');
+                 divTag.innerHTML = element
+                 bodyTag.appendChild(divTag)
+            });
+        }
+        generateDivs(11,21,31);
+    </script>
+    
+        
+
+    </body>
+</html>
